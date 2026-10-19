@@ -1,0 +1,44 @@
+/* R2 Mobile First: el CSS base es para celular */
+:root{--azul:#14235a;--azul2:#3e4a85;--fondo:#ffffff;--linea:#d9d9d9;--gris:#777;--texto:#111}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;font-family:system-ui,Arial,sans-serif;line-height:1.6;color:var(--texto);background:var(--fondo)}
+/* R7 ImÃ¡genes sin desbordar */
+img{max-width:100%;height:auto}
+/* R4 y R6 Grid por Ã¡reas, ancho mÃ¡ximo y centrado, unidades relativas */
+.sitio{display:grid;grid-template-areas:"cabecera" "menu" "principal" "pie";gap:1rem;max-width:70rem;margin:0 auto;padding:1rem}
+header{grid-area:cabecera;display:flex;flex-direction:column;align-items:center;text-align:center;gap:.5rem;background:var(--azul);color:#fff;padding:1.5rem 1rem;border-radius:.75rem}
+header h1{margin:0;font-size:1.6rem}
+header p{margin:0;letter-spacing:.08em;font-weight:700;background:var(--azul2);padding:.4rem 1rem;border-radius:.25rem}
+.avatar{border-radius:50%}
+nav{grid-area:menu}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.5rem}
+nav a{display:block;padding:.6rem 1rem;background:var(--azul);color:#fff;text-decoration:none;border-radius:.5rem}
+nav a:hover,nav a[aria-current="page"]{background:#fff;color:var(--azul);outline:2px solid var(--azul2)}
+main{grid-area:principal;background:#fff;padding:1rem;border:1px solid var(--linea);border-radius:.75rem}
+footer{grid-area:pie;text-align:center;background:var(--azul);color:#fff;padding:1rem;border-radius:.75rem}
+footer a{color:#fff}
+h2{color:var(--texto);font-weight:400;text-transform:uppercase;letter-spacing:.25em;font-size:1.1rem;border-bottom:1px solid var(--linea);padding-bottom:.4rem}
+.lista{padding-left:1.25rem}
+/* R5 Tarjetas automÃ¡ticas */
+.tarjetas{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:1rem}
+.tarjeta{background:#fff;padding:.75rem 1rem;border:1px solid var(--linea);border-left:.3rem solid var(--azul);border-radius:.5rem;margin-bottom:.75rem}
+.tarjeta em{color:var(--gris)}
+.tarjetas .tarjeta{margin-bottom:0}
+.tarjeta h3{margin:.25rem 0}
+/* R3 Breakpoint 1: desde 600px, cabecera en fila y menÃº horizontal */
+@media (min-width:600px){
+header{flex-direction:row;text-align:left;gap:1.5rem;padding:1.5rem 2rem}
+
+header h1{font-size:2.2rem}
+nav ul{flex-direction:row}
+nav li{flex:1}
+nav a{text-align:center}
+main{padding:1.5rem}
+}
+/* R3 y R4 Breakpoint 2: desde 1024px, menÃº a la izquierda y contenido a la derecha */
+@media (min-width:1024px){
+.sitio{grid-template-areas:"cabecera cabecera" "menu principal" "pie pie";grid-template-columns:14rem 1fr;align-items:start}
+nav ul{flex-direction:column;position:sticky;top:1rem}
+nav li{flex:none}
+nav a{text-align:left}
+}
