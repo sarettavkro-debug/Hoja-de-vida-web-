@@ -13,23 +13,29 @@ Sitio personal con mi hoja de vida, mis proyectos y mi información de contacto.
 Áreas usadas en `grid-template-areas`: `cabecera`, `menu`, `principal`, `pie`.
 
 ### Hoja de vida
-![Inicio en celular](mockups/inicio-celular.png)
-![Inicio en computador](mockups/inicio-computador.png)
+<img src="mockups/inicio-celular.png" width="250">
+<br>
+<img src="mockups/inicio-computador.png" width="450">
 
 ### Proyectos
-![Proyectos en celular](mockups/proyectos-celular.png)
-![Proyectos en computador](mockups/proyectos-computador.png)
+<img src="mockups/proyectos-celular.png" width="250">
+<br>
+<img src="mockups/proyectos-computador.png" width="450">
 
 ### Contacto
-![Contacto en celular](mockups/contacto-celular.png)
-![Contacto en computador](mockups/contacto-computador.png)
+<img src="mockups/proyectos-celular.png" width="250">
+<br>
+<img src="mockups/proyectos-computador.png" width="450">
 
 ## Capturas del sitio publicado
 Como se ve desde el celular:
-![Celu](capturas/Celular.jpeg)
 <br>
-como se ve desde el portatil: 
-![Computador](capturas/computador.png)
+<img src="capturas/Celular.jpeg" width="250">
+
+<br>
+Como se ve desde el portatil:
+<br>
+<img src="capturas/Computador.png" width="400">
 
 ## Breakpoints
 - Base (celular): todo en una columna; las áreas van apiladas (cabecera, menu, principal, pie) y el menú es vertical.
