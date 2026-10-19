@@ -2,7 +2,7 @@
 
 Sitio personal con mi hoja de vida, mis proyectos y mi información de contacto.
 
-**Sitio publicado:** https://TU-USUARIO.github.io/hoja-de-vida/
+**Sitio publicado:** https://sarettavkro-debug.github.io/Hoja-de-vida-web-/
 
 ## Páginas
 - `index.html`: hoja de vida
@@ -25,7 +25,10 @@ Sitio personal con mi hoja de vida, mis proyectos y mi información de contacto.
 ![Contacto en computador](mockups/contacto-computador.png)
 
 ## Capturas del sitio publicado
-![Celular](capturas/celular.png)
+Como se ve desde el celular:
+![Celu](capturas/Celular.jpeg)
+<br>
+como se ve desde el portatil: 
 ![Computador](capturas/computador.png)
 
 ## Breakpoints
@@ -41,3 +44,4 @@ Sitio personal con mi hoja de vida, mis proyectos y mi información de contacto.
 
 ## Fuentes consultadas
 - Documentación oficial de GitHub Pages: https://docs.github.com/es/pages
+
